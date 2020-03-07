@@ -17,15 +17,15 @@
     <h3>Customers list</h3>
         <table class="table">
             <tr>
-
+                <th>Id</th>
                 <th>First name</th>
                 <th>Last name</th>
                 <th>Email</th>
                 <th>Delete</th>
                 <th>Vidi listu proizvoda</th>
             </tr>
-            <tr v-for="(customer, i) in customers" :key="i">
-
+            <tr v-for="customer in customers" :key="customer.id">
+                <td>{{customer.id}}</td>
                 <td>{{ customer.firstName }}</td>
                 <td>{{ customer.lastName }}</td>
                 <td>{{ customer.email }}</td>
