@@ -31,6 +31,7 @@
                 <td>{{ customer.email }}</td>
                 <td><button @click="removeCustomer(customer)" class="btn btn-danger">Delete</button></td>
                 <td><button class="btn btn-success">Lista proizvoda</button></td>
+                <td><router-link class="btn btn-light" :to="{ name: 'latest-purchases', params: { id: customer.id }}">Latest Purchases</router-link></td>
             </tr>
         </table>
 
